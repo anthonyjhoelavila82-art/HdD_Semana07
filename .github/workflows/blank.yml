@@ -1,9 +1,11 @@
 name: a01_HdD
+
 on:
   workflow_dispatch:
-    jobs:                    # ← mal indentado, y "run-on" mal escrito
-      Mi_inicio:
-        run-on: ubuntu-latest
-        steps:
-        name: "inicio"
+
+jobs:
+  Mi_inicio:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "inicio"
         run: echo "Ok"
